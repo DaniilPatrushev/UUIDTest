@@ -19,6 +19,7 @@ Using docker container
 ```
 docker build . -t uuidgen:latest
 cd ./app
+mkdir databases
 python3 create_db.py
 docker run -p 127.0.0.1:8000:8000 --env-file=env.txt -v /path/to/directory/app/databases:/app/databases --name=PROD -d uuidgen:latest
 ```
