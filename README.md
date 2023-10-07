@@ -5,7 +5,7 @@
 ## Docs
 http://127.0.0.1:8000/docs
 
-- **POST** `/image`
+- **POST** `/register_user`
 Receives an email, checks for uniqueness, generates a password and UUID, hashes the password, records it in the database, and then sends an email.
 Returns JSON `{'status': <DONE/ERROR>, 'details': <details>}`
 
